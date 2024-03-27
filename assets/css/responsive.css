@@ -1,0 +1,140 @@
+
+
+@media all and (max-width: 1200px) {
+
+	.header .nav-link {
+		color: var(--secondary-color);
+		font-size: 12px;
+		margin-right: 22px;
+		white-space: nowrap;
+	}	
+
+	section.Services{
+		margin-top: 0px;
+	}
+	.service-bg{
+		height: auto;
+	}
+
+}
+
+
+@media all and (max-width: 991px) {
+
+	img.abc {
+		margin-top: -600px;
+		width: 100%;
+		position: relative;
+		display: none;
+	}
+	
+	.offcanvas-header{ display:block; }
+
+	.mobile-offcanvas{
+		visibility: hidden;
+		transform:translateX(-100%);
+	    border-radius:0; 
+		display:block;
+	    position: fixed;
+	    top: 0; left:0;
+	    height: 100%;
+	    z-index: 1200;
+	    width:80%;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+	}
+
+	.mobile-offcanvas.show{
+		visibility: visible;
+    	transform: translateX(0);
+        background-color: #fff;
+	}
+	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+		display: block;
+	}
+
+	.header .right .nav-link.fill{
+		margin-left: 6px;
+	}
+	.header .right .nav-link {
+		padding: 4px 9px;
+		margin-left: 0px;
+	}
+
+	.header .nav-link {
+		font-size: 16px;
+		margin-bottom: 14px;
+	}
+
+
+    .banner p{
+        width: 100%;
+    }
+
+	.banner .box{
+		/* width: 180px; */
+	}
+
+	.service-bg{
+		height: auto;
+	}
+
+	section.Services {
+		padding: 134px 0px 0px 0px;
+		margin-top: 0px;
+	}
+
+
+	.tab-content>.tab-pane {
+		display: block;
+		opacity: 1;
+	  }
+
+	  .secure .tabs .tab {
+		display: flex;
+		overflow: scroll;
+	}
+
+	.secure .tab button{
+		padding: 10px 10px;
+		font-size: 14px;
+	}
+
+	.trial-title {
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
+@media all and (max-width: 576px) {
+.banner_content {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.banner p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 85%;
+}
+
+section.Services {
+    padding: 208px 0px 0px 0px;}
+
+
+
+	.blockchain-deals .deal-box{
+		width: 100%;
+	}
+
+	.benefites-box{
+		width: 100%;
+		height: auto;
+	}
+
+	.modal-get-free .modal-body {
+		padding: 15px 15px 15px 15px;
+	}
+}
