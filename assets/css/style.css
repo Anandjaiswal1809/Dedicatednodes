@@ -361,6 +361,7 @@ h2.service-title {
     color: var(--secondary-color);
     border-top: 6px solid transparent;
     white-space: nowrap;
+    position: relative;
 }
 
 .blockchain-tabs .nav-tabs {
@@ -389,6 +390,12 @@ h2.service-title {
     display: block;
     max-width: 100%;
     fill: var(--secondary-color);
+    position: absolute;
+    width: 28px;
+    height: 28px;
+}
+.nav-link span {
+    margin-left: 36px;
 }
 
 .blockchain-tabs .nav-tabs svg:hover {
