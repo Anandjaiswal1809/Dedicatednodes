@@ -12,6 +12,7 @@
       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
          />
    </head>
+ 
    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
       <span class="screen-darken"></span>
       <section class="header py-2">
@@ -112,7 +113,7 @@
                                 <img src="assets/img/solana.svg" />
                             </div>
                         </div>
-                        <div class="slide m-10"> 
+                        <!-- <div class="slide m-10"> 
                             <div class="box">
                                 <img src="assets/img/cardano.svg" />
                             </div>
@@ -131,7 +132,7 @@
                         <div class="box">
                             <img src="assets/img/solana.svg" />
                         </div>
-                    </div>
+                    </div> -->
                     </div>
                     </div>
                 </div>
@@ -1666,11 +1667,26 @@
             </div>
          </div>
       </section>
+
       <section class="map-location">
          <div class="container">
-            <h3>Locations</h3>
-            <img src="assets/img/map.png" />
-         </div>
+             <h3>Locations</h3>
+             <div class="map-container">
+               <img src="assets/img/global-map.png" />
+               <div class="point Missouri tippy" title="Missouri"></div>
+       
+               <div class="point Florida tippy" title="Florida"></div>
+               <div class="point Washington tippy" title="Washington"></div>
+               <div class="point California tippy" title="California"></div>
+               <div class="point Texas tippy" title="Texas"></div>
+               <div class="point New-jersey tippy" title="New Jersey"></div>
+               <div class="point Illinois tippy" title="Illinois"></div>
+               <div class="point Virginia tippy" title="Virginia"></div>
+               <div class="point Georgia tippy" title="Georgia"></div>
+       
+               <!-- <a href="#" class="point Georgia tippy" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Georgia"></a> -->
+             </div>
+           </div>
       </section>
       <section class="trial">
          <div class="container">
@@ -1788,6 +1804,28 @@
           </div>
         </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/tippy.js@1.1.3/dist/tippy.min.js"></script>
+    
+      <script>
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      </script>
+    
+      <script>
+        $(document).ready(function () {
+          tippy(".tippy", {
+            theme: "light",
+            size: "big",
+            arrow: true,
+          });
+        });
+      </script>
 
       <script>
         AOS.init({
@@ -1891,13 +1929,5 @@
     });
 });
       </script>
-
-<script>
-    $(document).ready(function(){
-      $("#section2").click(function(){
-        $("button nav-link:second").addClass("intro");
-      });
-    });
-    </script>
    </body>
 </html>
