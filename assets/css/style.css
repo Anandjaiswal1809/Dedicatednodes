@@ -986,7 +986,7 @@ section.stop-managing .details {
 /* ============ network-section start ============ */
 
 section.network-section {
-    margin: 78px 0px;
+    margin-top: 78px;
 }
 
 .network-section .tabs-inside-title {
@@ -1002,7 +1002,9 @@ section.network-section {
     line-height: 28px;
     color: var(--light-black-color);
 }
-/* ============ network-section start ============ */
+/* ============ network-section End ============ */
+
+/* ============ Map start ============ */
 
 .map-location h3 {
     font-size: clamp(15px, 6vw, 28px);
@@ -1013,6 +1015,106 @@ section.network-section {
     color: var(--secondary-color);
     margin-bottom: 15px;
 }
+
+.map-container {
+    padding: 3.2rem 0.8rem;
+    position: relative;
+    display: inline-block;
+  }
+  .map-container img {
+    width: 100%;
+  }
+  .map-container .point {
+    cursor: pointer;
+    position: absolute; 
+    text-align: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fede32;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    will-change: transform, box-shadow;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
+    animation: pulse 3s infinite;
+  }
+  .map-container .point:hover {
+    animation: none;
+    transform: translate(-50%, -50%) scale3D(1.1, 1.1, 1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .map-container .Missouri {
+    top: 35%;
+    left: 24.5%;
+  }
+
+  .map-container .Florida {
+    top: 37.9%;
+    left: 26.5%;
+  }
+
+  .map-container .Washington {
+    top: 31.5%;
+    left: 18.9%;
+  }
+
+  .map-container .California {
+    top: 35%;
+    left: 18%;
+  }
+
+  .map-container .Texas {
+    top: 37.5%;
+    left: 23.5%;
+  }
+
+  .map-container .New-jersey {
+    top: 32.8%;
+    left: 29.5%;
+  }
+
+  .map-container .Illinois {
+    top: 33.9%;
+    left: 26.2%;
+  }
+
+  .map-container .arabia {
+    top: 40%;
+    left: 53%;
+  }
+  .map-container .Virginia {
+    top: 35.3%;
+    left: 28%;
+  }
+
+  .map-container .Georgia {
+    top: 34.2%;
+    left: 59.3%;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
+    }
+    70% {
+      box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+    }
+  }
+
+
+  .tippy-popper .tippy-tooltip.light-theme{
+    background-color: #fede32 !important;
+  }
+
+  .tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow] {
+  border-top: 7px solid #fede32 !important;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+/* ============ trial End ============ */
 
 /* ============ trial start ============ */
 
