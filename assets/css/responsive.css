@@ -82,10 +82,14 @@
 	}
 
 
-	.tab-content>.tab-pane {
+	/* .tab-content>.tab-pane {
 		display: block;
 		opacity: 1;
-	  }
+	  } */
+
+	  .tab button i.fa.fa-angle-right {
+		display: none;
+	}
 
 	  .secure .tabs .tab {
 		display: flex;
@@ -134,7 +138,7 @@ section.Services {
 
 
 	.blockchain-deals .deal-box{
-		width: 100%;
+		width: 90%;
 	}
 
 	.benefites-box{
