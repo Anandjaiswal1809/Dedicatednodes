@@ -72,10 +72,6 @@
         width: 100%;
     }
 
-	.banner .box{
-		/* width: 180px; */
-	}
-
 	.service-bg{
 		height: auto;
 	}
@@ -106,6 +102,18 @@
 		text-align: center;
 	}
 
+}
+
+@media all and (max-width: 768px) {
+.tippy-tooltip--big {
+    padding: .6rem 1.2rem;
+    font-size: 0.8rem;
+}
+
+.tippy-tooltip--big {
+    padding: .6rem 1.2rem;
+    font-size: 0.8rem !important;
+}
 }
 
 @media all and (max-width: 576px) {
