@@ -1107,6 +1107,8 @@ section.network-section {
 
   .tippy-popper .tippy-tooltip.light-theme{
     background-color: #fede32 !important;
+	  padding: .6rem 1.2rem;
+    font-size: 1.2rem;
   }
 
   .tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow] {
