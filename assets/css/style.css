@@ -252,13 +252,28 @@ filter: grayscale(100%);
     .banner-img {
         background-size: cover;
         background-repeat: no-repeat;
+        /* background-image: url(../img/bg-banner2.png); */
     }
 
     img.abc {
-        margin-top: -600px;
+        margin-top: -650px;
         width: 100%;
         position: relative;
         z-index: 1;
+    }
+
+    .rtrttr {
+        width: 100%;
+        margin: auto;
+        max-width: 1600px;
+        /* padding: 0px 20px; */
+    }
+
+    .xyz img {
+        width: 100%;
+        position: relative;
+        right: -1%;
+        margin-top: -40%;
     }
 
 /* ============ Banner End ============ */
@@ -273,7 +288,7 @@ section.Services {
     background-position: center;
     padding: 134px 0px 52px 0px;
     color: var(--white-color)f;
-    margin-top: -150px;
+    margin-top: -200px;
     position: relative;
     z-index: -1;
     margin-bottom: 70px;
