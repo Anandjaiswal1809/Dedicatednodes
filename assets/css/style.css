@@ -92,7 +92,9 @@ a.navbar-brand {
 section.header {
     background-color: var(--white-color);
     z-index: 999;
-    position: relative;
+    position: fixed;
+    top: 0%;
+    width: 100%;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -193,7 +195,7 @@ section.header {
 
 .banner_content {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 156px;
     z-index: 2;
     position: relative;
 }
@@ -211,6 +213,7 @@ button.btn.btn-trial {
     color: var(--white-color);
     font-size: 16px;
     border-radius: 0px;
+    border: 2px solid transparent;
 }
 
 button.btn.btn-trial:hover {
@@ -260,14 +263,14 @@ filter: grayscale(100%);
         width: 100%;
         position: relative;
         z-index: 1;
-	right:-1%
+        right: -1%;
     }
 
     .rtrttr {
         width: 100%;
         margin: auto;
         max-width: 1600px;
-	overflow: hidden;
+        overflow: hidden;
         /* padding: 0px 20px; */
     }
 
