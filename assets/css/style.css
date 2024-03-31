@@ -259,7 +259,7 @@ filter: grayscale(100%);
     }
 
     img.abc {
-        margin-top: -650px;
+        margin-top: -700px;
         width: 100%;
         position: relative;
         z-index: 1;
