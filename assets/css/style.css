@@ -263,7 +263,7 @@ filter: grayscale(100%);
         margin-top: -700px;
         width: 100%;
         position: relative;
-        z-index: 1;
+        z-index: 11;
         right: -1%;
     }
 
@@ -296,7 +296,7 @@ section.Services {
     color: var(--white-color)f;
     margin-top: -200px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     margin-bottom: 70px;
 }
 
