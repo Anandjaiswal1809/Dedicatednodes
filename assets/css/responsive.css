@@ -37,9 +37,10 @@
 	    top: 0; left:0;
 	    height: 100%;
 	    z-index: 1200;
-	    width:80%;
+	    /* width:80%; */
+		width:auto;
 	    overflow-y: scroll;
-	    overflow-x: hidden;
+	    /* overflow-x: hidden; */
 	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
 	}
 
@@ -131,20 +132,18 @@
 }
 
 section.Services {
-    padding: 208px 0px 0px 0px;}
+    padding: 208px 0px 0px 0px;
+}
 
+.blockchain-deals .deal-box{
+	width: 90%;
+}
+.benefites-box{
+	width: 100%;
+	height: auto;
+}
 
-
-	.blockchain-deals .deal-box{
-		width: 90%;
-	}
-
-	.benefites-box{
-		width: 100%;
-		height: auto;
-	}
-
-	.modal-get-free .modal-body {
-		padding: 15px 15px 15px 15px;
-	}
+.modal-get-free .modal-body {
+	padding: 15px 15px 15px 15px;
+}
 }
