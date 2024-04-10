@@ -1,3 +1,10 @@
+@media all and (max-width: 1350px) {
+.blockchain-tabs .nav-tabs {
+	justify-content: start;
+}
+}
+
+
 @media all and (max-width: 1200px) {
 
 	.header .nav-link {
